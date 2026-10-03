@@ -1,0 +1,13 @@
+{
+  "name": "merge-jelly",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agar.io x 2048 browser game",
+  "scripts": {
+    "test": "node --test tests/logic.test.js",
+    "test:e2e": "node tests/e2e.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1"
+  }
+}

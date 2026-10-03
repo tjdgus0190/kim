@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Merge Jelly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud" class="hidden">
+    <div class="hud-left panel">
+      <div class="label">점수</div>
+      <div id="score" class="big">0</div>
+      <div class="label small">최고 <span id="hudBest">0</span></div>
+    </div>
+
+    <div class="hud-center">
+      <div id="tile" class="tile">2</div>
+      <div class="progress"><div id="progressFill"></div></div>
+      <div id="progressText" class="label small">0 / 2</div>
+      <div id="combo" class="combo hidden">COMBO ×2</div>
+    </div>
+
+    <div class="hud-right">
+      <button id="btnPause" class="icon-btn" aria-label="일시정지">⏸</button>
+      <button id="btnMute" class="icon-btn" aria-label="소리">🔊</button>
+    </div>
+
+    <div id="stageLabel" class="stage-label panel">스테이지 1 · 얕은 접시</div>
+    <button id="btnDash" class="dash-btn" aria-label="대시">⚡<svg viewBox="0 0 100 100"><circle id="dashRing" cx="50" cy="50" r="46"/></svg></button>
+  </div>
+
+  <div id="banner" class="banner hidden"></div>
+
+  <div id="screenTitle" class="screen">
+    <div class="card">
+      <h1 class="logo"><span>M</span><span>E</span><span>R</span><span>G</span><span>E</span> <span>J</span><span>E</span><span>L</span><span>L</span><span>Y</span></h1>
+      <p class="tagline">같은 숫자를 먹으면 2배!</p>
+      <ul class="rules">
+        <li><i class="dot food"></i>작은 숫자 → <b>먹어요</b></li>
+        <li><i class="dot gold"></i>같은 숫자 → <b>즉시 합체 ×2</b></li>
+        <li><i class="dot danger"></i>큰 숫자 → <b>도망쳐요!</b></li>
+        <li><i class="dot spike"></i>가시 → 32부터 <b>반토막</b> (큰 놈을 유인!)</li>
+      </ul>
+      <button id="btnStart" class="primary">▶ 시작하기</button>
+      <p class="meta">최고 점수 <b id="titleBest">0</b> · 최고 숫자 <b id="titleBestV">2</b></p>
+      <p class="hint">마우스로 이동 · 클릭/Space 대시 · 모바일은 터치</p>
+    </div>
+  </div>
+
+  <div id="screenOver" class="screen hidden">
+    <div class="card">
+      <h2>꿀꺽! 😵</h2>
+      <p id="overReason" class="tagline">젤리에게 먹혔어요</p>
+      <div class="stats">
+        <div><span class="label">점수</span><b id="overScore">0</b><em id="newBest" class="hidden">NEW BEST!</em></div>
+        <div><span class="label">최고 숫자</span><b id="overMaxV">2</b></div>
+        <div><span class="label">시간</span><b id="overTime">0:00</b></div>
+        <div><span class="label">먹은 젤리</span><b id="overEats">0</b></div>
+      </div>
+      <button id="btnRetry" class="primary">↻ 다시하기</button>
+      <p class="hint">Space / Enter 로 재시작</p>
+    </div>
+  </div>
+
+  <div id="screenPause" class="screen hidden">
+    <div class="card">
+      <h2>일시정지</h2>
+      <button id="btnResume" class="primary">▶ 계속하기</button>
+      <p class="hint">P / Esc</p>
+    </div>
+  </div>
+
+  <script src="logic.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

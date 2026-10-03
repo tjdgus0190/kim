@@ -1,0 +1,139 @@
+{
+  "results": [
+    {
+      "name": "타이틀 화면 표시",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "타이틀 배경 젤리 생성",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "시작 → 플레이 모드",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "HUD 표시",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "시작 무적 적용",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "마우스 방향으로 이동",
+      "ok": true,
+      "info": "dx=123"
+    },
+    {
+      "name": "키보드 이동",
+      "ok": true,
+      "info": "dy=89"
+    },
+    {
+      "name": "Space 대시 쿨다운 시작",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "일시정지 시 시간 정지",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "일시정지 해제",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "봇 플레이 중 성장 발생",
+      "ok": true,
+      "info": "최고 숫자 128"
+    },
+    {
+      "name": "봇이 먹기 수행",
+      "ok": true,
+      "info": "한 판 최다 8회"
+    },
+    {
+      "name": "큰 젤리와 겹치면 게임오버",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "게임오버 화면 표시",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "게임오버 사유 표시",
+      "ok": true,
+      "info": "512 젤리에게 먹혔어요"
+    },
+    {
+      "name": "최고 점수 저장",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "같은 숫자 먹으면 즉시 2배",
+      "ok": true,
+      "info": "2 → 4"
+    },
+    {
+      "name": "가시 피격 시 반토막 & 생존",
+      "ok": true,
+      "info": "{\"v\":64,\"p\":0,\"mode\":\"play\"}"
+    },
+    {
+      "name": "위협 젤리가 가시에 닿으면 반토막(TRAP)",
+      "ok": true,
+      "info": "{\"before\":128,\"after\":64,\"pv\":64}"
+    },
+    {
+      "name": "2048 달성 시 클리어 배너",
+      "ok": true,
+      "info": "🏆 2048 달성!전설의 황금 젤리! 무한 모드 시작"
+    },
+    {
+      "name": "모바일: 대시 버튼 노출",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "모바일: 가로 스크롤 없음",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "모바일: 대시 버튼 동작",
+      "ok": true,
+      "info": ""
+    },
+    {
+      "name": "모바일: 터치 방향 이동",
+      "ok": true,
+      "info": "dx=265"
+    },
+    {
+      "name": "콘솔/런타임 에러 없음",
+      "ok": true,
+      "info": ""
+    }
+  ],
+  "bot": {
+    "runs": 1,
+    "maxV": 128,
+    "bestScore": 240,
+    "eats": 8,
+    "merges": 6,
+    "spikeHits": 0,
+    "deaths": 0,
+    "killers": []
+  }
+}
